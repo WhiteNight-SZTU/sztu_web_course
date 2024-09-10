@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>注册</h2>
+            <form id="register-step1-form" class="form">
+                <label for="register-phone">手机号</label>
+                <input type="text" id="register-phone" name="phone" required>
+                <label for="register-code">验证码</label>
+                <input type="text" id="register-code" name="code" required>
+                <button type="button" onclick="sendRegisterSmsCode()">发送验证码</button>
+                <button type="button" onclick="showRegisterStep2()">下一步</button>
+            </form>
+            <form id="register-step2-form" class="form" style="display: none;">
+                <label for="register-username">用户名</label>
+                <input type="text" id="register-username" name="username" required>
+                <label for="register-email">邮箱</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">密码</label>
+                <input type="password" id="register-password" name="password" required>
+                <button type="submit">注册</button>
+            </form>
+            <p>已经有账号？ <a href="login.html">登录</a></p>
+        </div>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>

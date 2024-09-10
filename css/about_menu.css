@@ -1,0 +1,41 @@
+.about-menu-item {
+    position: relative;
+    border-bottom: 1px solid #999;
+    color: #000333;
+    padding: 22px 80px 22px 30px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+ol, ul {
+    list-style: none;
+}
+ul {
+    list-style-type: disc;
+}
+.about-menu-wp {
+    width: 208px;
+    flex: 0 0 auto;
+    font-size: 16px;
+}
+
+.about-menu-item:before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 14px;
+    top: 50%;
+    margin-top: -7px;
+    right: 30px;
+    background-image: url(../image/bg.png);
+}
