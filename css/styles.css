@@ -2,9 +2,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     display: flex;
-    justify-content: center;
+
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 
@@ -103,4 +103,10 @@ p a:hover {
 .wrap dl{
     flex: 1;
     margin: 0 10px;
+    
+}
+
+.copyright_info{
+    margin-bottom: 50px;
+    font-size: 12px;
 }
