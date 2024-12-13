@@ -17,6 +17,14 @@
         <div class = "user-interface">
             <a href="register.html">免费注册</a>
             <a href="login.html">登录</a>
+            <div class="dropdown">
+                <button class="dropbtn">菜单 &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="#">手机京东</a>
+                    <a href="#">关注京东</a>
+                    <a href="#">京东金融客户端</a>
+                </div>
+            </div>
         </div>
         <input type="text" placeholder="搜索..." class="search-box">
         <div class="nav-bar">
@@ -31,7 +39,12 @@
     <div class="shop-item">
     <nav class="sidebar">
             <ul>
-                <li><a href="#"><i class="icon">📺</i> 家用电器</a></li>
+                <li class="dropdown-2">
+                    <a href="#"><i class="icon">📺</i> 家用电器</a>
+                    <div class="dropdown-content-2">
+                        <img src="image/fake_secondarymenu.png" alt="">
+                    </div>
+                </li>
                 <li><a href="#"><i class="icon">📱</i> 手机 / 运营商 / 数码</a></li>
                 <li><a href="#"><i class="icon">💻</i> 电脑 / 办公 / 文具用品</a></li>
                 <li><a href="#"><i class="icon">🛋️</i> 家居 / 家具 / 装修 / 厨具</a></li>
@@ -207,6 +220,53 @@
    </div>
 </body>
 <style>
+    .dropdown-content-2 {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-2 {
+        position: relative;
+        display: inline-block;
+    }
+    .dropbtn {
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown-2:hover .dropdown-content-2 {
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
     .user-interface{
         margin-bottom: 20px;
     }
